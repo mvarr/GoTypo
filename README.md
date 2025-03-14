@@ -1,52 +1,47 @@
 # GoTypo
-GoTypo – A fast and lightweight spellchecker written in Go.
-# What is GoTypo?
 
-GoTypo is a simple yet effective spellchecker built in Go. It uses:
+simple, fast, and kinda-smart spellchecker written in go. no more typos ruining your vibe.
+## What's the deal?
 
-  - Trie for fast word lookup
-  - Levenshtein Distance to detect typos
-  - A basic Markov Model for smarter suggestions
+GoTypo is a lightweight spellchecker that uses:
 
-If you've ever mistyped something and wished for a quick fix, GoTypo has your back.
-# Why Go?
+  - trie (for lightning-fast dictionary lookup)
+  - levenshtein distance (fancy name for typo-catching math)
+  - a basic suggestion engine so your typos don’t embarrass you
 
-  - Fast – No sluggish scripts, just raw performance.
-  - Lightweight – No bloated dependencies, runs as a single binary.
-  - Cross-platform – Works on Linux, macOS, and Windows.
+its built for speed and simplicity, zero bloated dependencies, just clean go code. and also i love to code in go.
+## How to use it?
 
-# Installation (Coming soon!)
-
-Once the project is in a working state, you'll be able to install it with:
+first, clone this repo:
 ```bash
-go install github.com/yourusername/gotypo@latest
+git clone https://github.com/mvarr/GoTypo.git
+cd GoTypo
 ```
-For now, you can clone the repo and run it manually:
+make sure you have a file named words.txt in the project folder. each line = one word, easy stuff.
+
+then, run it:
 ```bash
-git clone https://github.com/yourusername/gotypo.git
-cd gotypo
 go run main.go
 ```
-# How It Works (Planned Features)
+boom. enter a word, hit enter, and see if you messed up.
 
-  - Real-time spellchecking from input text
-  - CLI-based interface for quick corrections
-  - Custom word lists for better accuracy
-  - Basic GUI support (maybe?)
+type exit to stop the madness.
+## How it works?
 
-# Current Status
+  - trie: checks instantly if your word exists.
+  - levenshtein math: finds words that are kinda close to what you typed. despite i hate math, its kinda fun to write.
+  - suggestions: shows a tidy list of up to 10 corrections. (in other way it spams like crazy, so i have to limit to 10)
 
-This project is still in its early stages. Expect bugs, missing features, and questionable decisions. Contributions are welcome, but no guarantees on stability just yet.
-# Contributing
+## Possible Next Steps (TODO)
 
-  - If you find a bug, open an issue.
-  - If you have a feature idea, let’s talk.
-  - If you want to contribute, PRs are welcome – just keep it clean.
+  - maybe throw a basic gui in there.
+  - improve suggestion algorithm (markov chain style? well see.)
+  - option to add custom dictionaries so you can flex your weird vocab.
 
-# License
+## Contribute?
 
-MIT – Do whatever you want, just don’t blame me if it breaks.
+sick. drop a PR, open an issue, or just fork it and do your own thing. keep it clean, though nobody likes messy code.
 
-Stay tuned. More coming soon.
+## License
 
-
+MIT. basically, do whatever you want just dont blame me if things explode.
